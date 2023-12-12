@@ -3,10 +3,9 @@ import styles from './App.module.css';
 import { data } from '../../assets/utils';
 import AccordionItem from '../AccordionItem/AccordionItem';
 function App() {
-  const [accData, setAccData] = React.useState(data);
   return (
     <div className={`${styles.AppWrapper}`}>
-      <main className={`${styles.BodyWrapper}`}>
+      <main className={`${styles.BodyWrapper}`} tabIndex="0">
         <div className={`${styles.HeaderWrapper}`}>
           <div className={`${styles.AccordionWrapper}`}>
             <article className={`${styles.AccordionGourp}`}>
@@ -25,15 +24,16 @@ function App() {
                 </svg>
                 <h1>FAQs</h1>
               </header>
-              {accData.length !== 0 &&
-                accData.map(({ title, description, status }, index) => {
+              {data.length !== 0 &&
+                data.map(({ title, description, status }, index) => {
                   return (
                     <AccordionItem
                       key={`${title}-${index}`}
                       title={title}
                       description={description}
                       status={status}
-                      setAccData={setAccData}
+                      accData={data}
+                      index={index}
                     />
                   );
                 })}
