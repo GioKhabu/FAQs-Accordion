@@ -8,8 +8,12 @@ function AccordionItem({ title, description, status, accData, index }) {
   return (
     <section className={`${styles.AccordItem}`}>
       {index + 1 !== accData.length ? (
-        <div className={`${styles.AccordItemHead}`} onClick={() => setCurStatus(!currStatus)}>
-          <h2>{title}</h2>
+        <div
+          className={`${styles.AccordItemHead}`}
+          onClick={() => setCurStatus(!currStatus)}
+          tabIndex="0"
+        >
+          <h2 tabIndex="0">{title}</h2>
           {currStatus ? (
             <img src={OpenIcon} alt="open icon" />
           ) : (
@@ -19,10 +23,11 @@ function AccordionItem({ title, description, status, accData, index }) {
       ) : (
         <div
           className={`${styles.AccordItemHead}`}
-          style={{ marginBottom: '0'}}
+          style={{ marginBottom: '0' }}
           onClick={() => setCurStatus(!currStatus)}
+          tabIndex="0"
         >
-          <h2>{title}</h2>
+          <h2 tabIndex="0">{title}</h2>
           {currStatus ? (
             <img src={OpenIcon} alt="open icon" />
           ) : (
@@ -31,13 +36,7 @@ function AccordionItem({ title, description, status, accData, index }) {
         </div>
       )}
 
-      <p
-        style={
-          currStatus
-            ? { display: 'inline-block'}
-            : { display: 'none'}
-        }
-      >
+      <p style={currStatus ? { display: 'inline-block' } : { display: 'none' }} tabIndex="0">
         {description}
       </p>
 
