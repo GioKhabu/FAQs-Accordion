@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/FAQs-Accordion/static/css/main.8fcde22c.css",
-    "main.js": "/FAQs-Accordion/static/js/main.e8d88b23.js",
+    "main.css": "/FAQs-Accordion/static/css/main.a230e17b.css",
+    "main.js": "/FAQs-Accordion/static/js/main.00d16abd.js",
     "static/media/background-vector.svg": "/FAQs-Accordion/static/media/background-vector.97bce09bfe787e233687.svg",
     "static/media/closed_button.svg": "/FAQs-Accordion/static/media/closed_button.0746d0094f69062ce5ab5db1bbcfb797.svg",
     "static/media/open_button.svg": "/FAQs-Accordion/static/media/open_button.4c0d1067b22cedf9d27f3b3a9b5954bd.svg",
     "index.html": "/FAQs-Accordion/index.html",
-    "main.8fcde22c.css.map": "/FAQs-Accordion/static/css/main.8fcde22c.css.map",
-    "main.e8d88b23.js.map": "/FAQs-Accordion/static/js/main.e8d88b23.js.map"
+    "main.a230e17b.css.map": "/FAQs-Accordion/static/css/main.a230e17b.css.map",
+    "main.00d16abd.js.map": "/FAQs-Accordion/static/js/main.00d16abd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fcde22c.css",
-    "static/js/main.e8d88b23.js"
+    "static/css/main.a230e17b.css",
+    "static/js/main.00d16abd.js"
   ]
 }
