@@ -4,8 +4,8 @@ import { data } from '../../assets/utils';
 import AccordionItem from '../AccordionItem/AccordionItem';
 function App() {
   return (
-    <div className={`${styles.AppWrapper}`}>
-      <main className={`${styles.BodyWrapper}`} tabIndex="0">
+    <div className={`${styles.AppWrapper}`} tabIndex="0">
+      <main className={`${styles.BodyWrapper}`} >
         <div className={`${styles.HeaderWrapper}`}>
           <div className={`${styles.AccordionWrapper}`}>
             <article className={`${styles.AccordionGourp}`}>
