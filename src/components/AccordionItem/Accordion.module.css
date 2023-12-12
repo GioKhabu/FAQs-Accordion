@@ -1,0 +1,64 @@
+.AccordItem {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.15s ease-in-out;
+}
+
+.AccordItemHead {
+  display: flex;
+  padding: 0;
+  /* min-height: 30px; */
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.AccordItemHead > svg {
+  min-width: 30px;
+  min-height: 30px;
+  margin-left: 24px;
+}
+
+.AccordItemHead > h2 {
+  color: var(--Dark-Purple, #301534);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.AccordItemHead:hover > h2 {
+  color: var(--Pink, #ad28eb);
+}
+
+.AccordItem > p {
+  align-self: stretch;
+  color: var(--Pale-Purple, #8b6990);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 660px) {
+  .AccordItemHead > h2 {
+    font-size: 16px;
+  }
+  .AccordItem > p {
+    font-size: 14px;
+  margin-bottom: 20px;
+
+  }
+}
+
+.AccordItem > hr {
+  height: 1px;
+  border: none;
+  margin: 0;
+  width: 100%;
+  background: var(--Light-Pink, #f8eeff);
+}
